@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+public telephone: string = "+57 3102105253";
+public email: string = "info@viveroelotonio.com";
+public instagram: string = "@viveroelotonio";
 
   constructor() { }
 

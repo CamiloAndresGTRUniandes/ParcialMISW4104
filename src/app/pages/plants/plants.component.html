@@ -1,22 +1,32 @@
 <div class="container">
-    <div class="table-responsive">
-        <table class="table">
-            <thead class="table-dark">
-                <tr>
-                    <th>#</th>
-                    <th>Nombre común</th>
-                    <th>Tipo</th>
-                    <th>Clima</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let plant of plants">
-                    <th>{{plant.id}}</th>
-                    <td>{{plant.nombre_comun}}</td>
-                    <td>{{plant.tipo}}</td>
-                    <td>{{plant.clima}}</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="col-12">
+        <div class="row">
+            <hr class="line-header">
+            <div class="table-responsive" style="max-width: 75%;">
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre común</th>
+                            <th>Tipo</th>
+                            <th>Clima</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let plant of plants">
+                            <th>{{plant.id}}</th>
+                            <td>{{plant.nombre_comun}}</td>
+                            <td>{{plant.tipo}}</td>
+                            <td>{{plant.clima}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>Total plantas de interior: {{interior}}</p>
+            <p>Total plantas de exterior: {{exterior}}</p>
+        </div>
     </div>
 </div>
