@@ -20,4 +20,10 @@ describe('FooterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('Text should be equal to => Contact us: +57 3102105253 - info@viveroelotonio.com - @viveroelotonio', () => {
+    const fixture = TestBed.createComponent(FooterComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('p')?.textContent).toContain('Contact us: +57 3102105253 - info@viveroelotonio.com - @viveroelotonio');
+  });
 });
