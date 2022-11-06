@@ -11,7 +11,7 @@ export class PlantsComponent implements OnInit {
   public plants: Plant[] = [];
   public interior : number = 0;
   public exterior : number = 0;
-  constructor(private plantService:PlantService) { }
+  constructor(public plantService:PlantService) { }
 
   ngOnInit(): void {
    this.getPlants();
